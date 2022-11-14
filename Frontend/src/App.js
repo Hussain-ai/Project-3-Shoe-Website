@@ -8,7 +8,7 @@ import Cart from './components/Cart/Cart'
 import Shop from './components/Shop/Shop'
 import Contact from './components/Contact/Contact'
 import {BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-
+import useForm from 'react-hook-form'
 export default class App extends Component {
   render() {
     return (

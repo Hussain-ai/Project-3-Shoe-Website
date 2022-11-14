@@ -9,17 +9,17 @@ const UserModel = new schema({
     email: {type: String, required: true},
     password: {type: String, required: true},
     //Associate the tweet model
-    tweets: [{
+    product: [{
         type: schema.Types.ObjectId,
-        ref: 'Tweet'
+        ref: 'Product' 
         }]
 }, {
     timestamps: true
 })
 
 
+//const User = mongoose.model('User', userschema)
+
 const User = mongoose.model('User', UserModel)
 
-module.exports = User
-
-
+module.exports = User   

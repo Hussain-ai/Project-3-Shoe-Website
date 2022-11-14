@@ -4,8 +4,7 @@ export default class App extends Component {
   render() {
     return (
 <>
-<h1>Contact</h1>
-
+<h1>Contact us</h1>
 </>
     )
   }
