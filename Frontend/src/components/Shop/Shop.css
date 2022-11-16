@@ -2,34 +2,36 @@
 #shop table{
     width: 100%;
     border-collapse: collapse;
-    table-layout: fixed;
-    white-space: nowrap;
+    table-layout:auto;
+    white-space: wrap;
+    border: 2px solid black;
 }
 #shop table img{
     width:70px;
 }
-
-#shop table td:nth-child(1){
-    width: 100%;
-    text-align: center;
+#shop table td{
+    padding: 15px;
+    border: 0.5px solid rgb(88, 82, 82);
 }
+#shop table td:nth-child(3){
+    width: 20%;
+    text-align: center;
+
+}   
+/* #shop table td:nth-child(1),
 #shop table td:nth-child(2),
 #shop table td:nth-child(4),
 #shop table td:nth-child(5),
 #shop table td:nth-child(6){
-    width: 150%;
+    width: 350%;
     text-align: center;
-}
-#shop table td:nth-child(3){
-    width: 250%;
-    text-align: center;
-}
-#shop table td:nth-child(5) input{
+} */
+/* #shop table td:nth-child(5) input{
     width:70px ;
     padding: 10px 5px 10px 15px;
-}
+} */
 #shop table thead{
-    border: 1px so13pxlid black;
+    border: 1px solid black;
     border-left: none;
     border-right: none;  
 }
@@ -42,6 +44,7 @@
 #shop table tbody tr td{
     padding-top: 15px;
 }
-#shop table tbody tr td{
-    font-size: px;
+
+input{
+    padding: 10px;
 }

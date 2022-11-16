@@ -15,6 +15,7 @@ function Cart() {
     axios.get('http://localhost:3000/Cart')
     .then(res => setCart(res.data))
   }
+  return (
 <>
 <h1>Cart</h1>
 <section id='cart'>
@@ -24,6 +25,8 @@ function Cart() {
     <td>Id</td>
     <td>name</td>
     <td>Image</td>
+    <td>Size</td>
+    <td>Category</td>
     <td>Price</td>
     <td>Quantity</td>
   </tr>
@@ -34,11 +37,21 @@ function Cart() {
     <td><a href="">cart.id</a></td>
     <td><a href="">cart.name</a></td>
     <td><img src="cart.img" alt="" /></td>
+    <td><a href="">cart.size</a></td>
+    <td><a href="">cart.category</a></td>
     <td><a href="">cart.price</a></td>
     <td>cart.quantity</td>
   </tr>
   {/* }) */}
-</tbody>
+  <tr>
+    <td><a href="">cart.id</a></td>
+    <td><a href="">cart.name</a></td>
+    <td><img src="cart.img" alt="" /></td>
+    <td><a href="">cart.size</a></td>
+    <td><a href="">cart.category</a></td>
+    <td><a href="">cart.price</a></td>
+    <td>cart.quantity</td>
+  </tr></tbody>
 </table>
 </section>
 <section id='subtotal'>
@@ -59,7 +72,6 @@ function Cart() {
 </section>
 
 </>
-
-
+  )
 }
 export default Cart

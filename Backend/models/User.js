@@ -11,7 +11,7 @@ const UserModel = new schema({
     //Associate the tweet model
     product: [{
         type: schema.Types.ObjectId,
-        ref: 'Product' 
+        ref: 'shop' 
         }]
 }, {
     timestamps: true

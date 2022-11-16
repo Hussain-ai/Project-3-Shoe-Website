@@ -29,6 +29,8 @@ function Shop() {
     <td>name</td>
     <td>Image</td>
     <td>Price</td>
+    <td>Size</td>
+    <td>Category</td>
     <td>Quantity</td>
     <td>Add button</td>
   </tr>
@@ -39,6 +41,8 @@ function Shop() {
     <td><a href="">product.id</a></td>
     <td><a href="">product.name</a></td>
     <td><img src="product.img" alt="" /></td>
+    <td><a href="">product.price</a></td>
+    <td><input type="number" value=""/></td>
     <td><a href="">product.price</a></td>
     <td><input type="number" value=""/></td>
     <td><button>Add to Cart</button> <button>Edit</button></td>
